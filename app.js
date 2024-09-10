@@ -37,11 +37,4 @@ function loadFeed() {
         postDiv.textContent = ${post.content} (Posted on ${post.timestamp});
         feed.appendChild(postDiv);
     });
-const feed=document.getElementId('feed');
-feed.innerHTML='';
-const Likes-JSON.parse(localstorage.getElement('likes')) ||[];
-likes.forEach(post=>{
-    const likediv=document.createElement('div');
-    likesDiv.textContent=${like.content}(posted on ${lokes.timestamp});
-});
 }
