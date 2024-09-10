@@ -12,15 +12,21 @@ function createPost() {
         content: content,
         timestamp: new Date().toLocaleString()
     };
-
+const post = {
+        content: content,
+        timestamp: new Date().toLocaleString()
+    };
     // Save the post in localStorage
     let posts = JSON.parse(localStorage.getItem('posts')) || [];
     posts.push(post);
+     let likes = JSON.parse(localStorage.getItem('likes')) || [];
+    likes.push(like);
     localStorage.setItem('posts', JSON.stringify(posts));
+     localStorage.setItem('likes', JSON.stringify(likes));
 
     // Clear the textarea
     document.getElementById('post-content').value = '';
-
+ document.getElementById('like-content').value = '';
     // Reload the feed
     loadFeed();
 }
