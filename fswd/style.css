@@ -1,0 +1,58 @@
+#auth-section, #user-section {
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+#auth-section input, #user-section textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 5px 10px;
+    margin: 5px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.post {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+}
+
+.comment {
+    margin-left: 20px;
+    font-size: 0.9em;
+}
+
+.follow-btn {
+    background-color: #28a745;
+}
+
+.follow-btn:hover {
+    background-color: #218838;
+}
+
+.like-btn, .dislike-btn, .comment-btn {
+    margin-right: 5px;
+}
+
+.fa {
+    margin-right: 5px;
+}
