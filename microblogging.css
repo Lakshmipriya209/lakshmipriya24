@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+}
+
+#auth-section {
+    width: 320px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #ffcccb, #ffb3ba);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+#user-section {
+    width: 320px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#auth-section input, #user-section textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 5px 10px;
+    margin: 5px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.post {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.comment {
+    margin-left: 20px;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+    background-color: #e9f5ff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.follow-btn {
+    background-color: #28a745;
+}
+
+.follow-btn:hover {
+    background-color: #218838;
+}
+
+.feed-item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.feed-content {
+    margin-bottom: 5px;
+}
+
+.timestamp {
+    font-size: 0.8em;
+    color: #888;
+}
+
+.red-heart {
+    color: red;
+    cursor: pointer;
+}
+
+.brown-thumb {
+    color: brown;
+    cursor: pointer;
+}
+
+.emoji {
+    font-size: 20px;
+}
