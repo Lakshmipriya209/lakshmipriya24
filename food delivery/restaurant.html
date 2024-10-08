@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 id="restaurantName">Restaurant Menu</h1>
+    </header>
+    <main>
+        <section id="menu">
+            <h2>Menu</h2>
+            <div class="dish" data-name="Pizza" data-price="10.99">
+                <img src="images/pizza.jpg" alt="Pizza">
+                <h3>Pizza</h3>
+                <p>$10.99</p>
+                <button onclick="addToCart('Pizza', 10.99)">Add to Cart</button>
+            </div>
+            <div class="dish" data-name="Burger" data-price="8.99">
+                <img src="images/burger.jpg" alt="Burger">
+                <h3>Burger</h3>
+                <p>$8.99</p>
+                <button onclick="addToCart('Burger', 8.99)">Add to Cart</button>
+            </div>
+            <div class="dish" data-name="Salad" data-price="7.99">
+                <img src="images/salad.jpg" alt="Salad">
+                <h3>Salad</h3>
+                <p>$7.99</p>
+                <button onclick="addToCart('Salad', 7.99)">Add to Cart</button>
+            </div>
+        </section>
+
+        <section id="cart">
+            <h2>Your Cart</h2>
+            <ul id="cartItems"></ul>
+            <p>Total Price: <span id="totalPrice">$0.00</span></p>
+            <button onclick="checkout()">Checkout</button>
+        </section>
+
+        <div id="orderConfirmation" style="display: none;">
+            <h2>Order Confirmation</h2>
+            <p>Your order has been placed!</p>
+            <button onclick="confirmOrder()">Confirm Order</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
