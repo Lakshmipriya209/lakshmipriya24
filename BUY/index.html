@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classifieds App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Buy and Sell Used Products</h1>
+        <form id="itemForm">
+            <input type="text" id="itemName" placeholder="Item Name" required>
+            <input type="number" id="itemPrice" placeholder="Price" required>
+            <textarea id="itemDescription" placeholder="Description" required></textarea>
+            <button type="submit">Add Item</button>
+        </form>
+        
+        <h2>Items for Sale</h2>
+        <div id="itemList"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
