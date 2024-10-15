@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 20px;
+}
+
+#auth-section, #user-section {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 500px;
+}
+
+h2, h3 {
+    color: #333;
+    text-align: center;
+}
+
+input[type="text"],
+input[type="file"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#feed {
+    margin-top: 20px;
+}
+
+#feed div {
+    background: #e9ecef;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+#feed img {
+    margin-top: 10px;
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+#follower-list, #user-list {
+    margin-top: 5px;
+}
+
+#user-list div, #follower-list div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 5px 0;
+}
