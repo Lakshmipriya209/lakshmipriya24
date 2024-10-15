@@ -64,6 +64,7 @@ button:hover {
 
 #follower-list, #user-list {
     margin-top: 5px;
+    length:25px;
 }
 
 #user-list div, #follower-list div {
