@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Advertising Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Online Advertising Platform</h1>
+
+        <form id="itemForm">
+            <input type="text" id="itemName" placeholder="Item Name" required>
+            <input type="number" id="itemPrice" placeholder="Price" required>
+            <textarea id="itemDescription" placeholder="Description" required></textarea>
+            <select id="itemCategory" required>
+                <option value="">Select Category</option>
+                <option value="electronics">Electronics</option>
+                <option value="furniture">Furniture</option>
+                <option value="clothing">Clothing</option>
+                <option value="toys">Toys</option>
+            </select>
+            <input type="text" id="sellerName" placeholder="Your Name" required>
+            <input type="text" id="contactInfo" placeholder="Contact Info (Email/Phone)" required>
+            <button type="submit">Add Item</button>
+        </form>
+
+        <h2>Items for Sale</h2>
+        <div>
+            <label for="filter">Filter by Category:</label>
+            <select id="filter">
+                <option value="">All</option>
+                <option value="electronics">Electronics</option>
+                <option value="furniture">Furniture</option>
+                <option value="clothing">Clothing</option>
+                <option value="toys">Toys</option>
+            </select>
+        </div>
+        <div id="itemList"></div>
+    </div>
+
+    <div id="inquiryModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Send Inquiry</h2>
+            <textarea id="inquiryMessage" placeholder="Type your message here..."></textarea>
+            <button id="sendInquiry">Send</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
