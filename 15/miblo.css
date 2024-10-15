@@ -64,8 +64,8 @@ button:hover {
 
 #follower-list, #user-list {
     margin-top: 5px;
-    length:25px;
-}
+    font-weight: lighter;
+    max-height: none;}
 
 #user-list div, #follower-list div {
     display: flex;
