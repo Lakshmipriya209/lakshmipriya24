@@ -1,99 +1,50 @@
+/* styles.css */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f8ff;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
 }
 
-#auth-section {
-    width: 320px;
-    margin: 20px auto;
-    padding: 20px;
-    border-radius: 10px;
-    background: linear-gradient(135deg, #ffcccb, #ffb3ba);
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
 }
 
-#user-section {
-    width: 320px;
-    margin: 20px auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    background-color: #ffffff;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-#auth-section input, #user-section textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-button {
-    padding: 5px 10px;
-    margin: 5px;
-    background-color: #007bff;
+nav a {
     color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    margin: 0 1em;
+    text-decoration: none;
 }
 
-button:hover {
-    background-color: #0056b3;
+main {
+    padding: 2em;
+    text-align: center;
 }
 
-.post {
-    border: 1px solid #ddd;
-    padding: 15px;
-    margin-bottom: 20px;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-}
-
-.comment {
-    margin-left: 20px;
-    font-size: 0.9em;
-    margin-bottom: 10px;
-    background-color: #e9f5ff;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-.follow-btn {
-    background-color: #28a745;
-}
-
-.follow-btn:hover {
-    background-color: #218838;
-}
-
-.feed-item {
+#product-list {
     display: flex;
-    flex-direction: column;
-    margin-bottom: 10px;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
-.feed-content {
-    margin-bottom: 5px;
+.product-item {
+    border: 1px solid #ddd;
+    padding: 1em;
+    margin: 1em;
+    width: 30%;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-.timestamp {
-    font-size: 0.8em;
-    color: #888;
-}
-
-.red-heart {
-    color: red;
-    cursor: pointer;
-}
-
-.brown-thumb {
-    color: brown;
-    cursor: pointer;
-}
-
-.emoji {
-    font-size: 20px;
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
