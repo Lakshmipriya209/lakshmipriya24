@@ -71,7 +71,7 @@ function loadFeed() {
 
         // Like button for posts with icon
         const likeBtn = document.createElement('button');
-        likeBtn.innerHTML = `<i class="fa fa-thumbs-up"></i> Like (${post.likes})`;
+        likeBtn.innerHTML = `<i class="fa fa-thumbs-up"></i> Like 👍(${post.likes})`;
         likeBtn.classList.add('like-btn');
         likeBtn.onclick = function () {
             post.likes++;
@@ -81,7 +81,7 @@ function loadFeed() {
 
         // Dislike button for posts with icon
         const dislikeBtn = document.createElement('button');
-        dislikeBtn.innerHTML = `<i class="fa fa-thumbs-down"></i> Dislike (${post.dislikes})`;
+        dislikeBtn.innerHTML = `<i class="fa fa-thumbs-down"></i> Dislike 👎(${post.dislikes})`;
         dislikeBtn.classList.add('dislike-btn');
         dislikeBtn.onclick = function () {
             post.dislikes++;
@@ -95,7 +95,7 @@ function loadFeed() {
         // Comment section with comment count and input
         const commentCount = post.comments.length;
         const commentBtn = document.createElement('button');
-        commentBtn.innerHTML = `<i class="fa fa-comments"></i> Comment (${commentCount})`;
+        commentBtn.innerHTML = `<i class="fa fa-comments"></i> Comment💬 (${commentCount})`;
         commentBtn.classList.add('comment-btn');
         commentBtn.onclick = function () {
             const commentText = prompt("Add your comment:");
