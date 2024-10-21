@@ -3,33 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Social Media App</title>
-    <link rel="stylesheet" href="miblo.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Classifieds</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+    <header>
+        <h1>Buy & Sell Used Products</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="add-product.html">Add Product</a>
+        </nav>
+    </header>
 
-<div id="auth-section">
-    <h2>Login</h2>
-    <input type="text" id="username" placeholder="Username">
-    <button onclick="registerOrLogin()">Log In</button>
-</div>
+    <main>
+        <h2>Available Products</h2>
+        <div id="product-list">
+            <!-- Products will be dynamically loaded here -->
+        </div>
+    </main>
 
-<div id="user-section" style="display:none;">
-    <h2>Welcome, <span id="current-user"></span></h2>
-    <button onclick="logout()">Logout</button>
-
-    <h3>Create a Post</h3>
-    <textarea id="post-content" placeholder="What's on your mind?"></textarea>
-    <input type="file" id="post-image" accept="image/*">
-    <button onclick="createPost()">Post</button>
-
-    <div id="feed"></div>
-</div>
-
-<h3>Users to Follow:</h3>
-<div id="user-list"></div>
-
-<script src="app.js"></script>
+    <footer>
+        <p>&copy; 2024 Classifieds App</p>
+    </footer>
+    <script src="js/app.js"></script>
 </body>
 </html>
