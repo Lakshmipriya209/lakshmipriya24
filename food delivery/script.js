@@ -1,5 +1,26 @@
-let cart = {};
+ let cart = {};
         let totalPrice = 0;
+        let loggedIn = false; // Track user login status
+
+        function login() {
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            const loginMessage = document.getElementById('loginMessage');
+
+            // Hardcoded user credentials for demonstration
+            const validUsername = 'user';
+            const validPassword = 'password';
+
+            // Check credentials
+            if (username === validUsername && password === validPassword) {
+                loggedIn = true;
+                loginMessage.textContent = 'Login successful!';
+                document.getElementById('loginSection').style.display = 'none'; // Hide login section
+                document.getElementById('cart').style.display = 'block'; // Show cart
+            } else {
+                loginMessage.textContent = 'Invalid username or password. Please try again.';
+            }
+        }
 
         function addToCart(dishName, price) {
             console.log(`Adding ${dishName} for $${price}`);
@@ -58,3 +79,6 @@ let cart = {};
 
         // Call this function when the restaurant page loads
         window.onload = setRestaurantName;
+    </script>
+</body>
+</html>
