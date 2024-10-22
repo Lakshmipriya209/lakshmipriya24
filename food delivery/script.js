@@ -1,6 +1,5 @@
 let cart = {};
 let totalPrice = 0;
-
 function addToCart(dishName, price) {
     if (cart[dishName]) {
         cart[dishName].quantity++;
