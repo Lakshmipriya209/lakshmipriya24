@@ -2,18 +2,18 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #c08686;
 }
 
 header {
     background-color: #333;
-    color: #fff;
+    color:#f5e3e3;
     padding: 1em;
     text-align: center;
 }
 
 nav a {
-    color: white;
+    color: rgb(238, 225, 221);
     margin: 0 1em;
     text-decoration: none;
 }
@@ -30,17 +30,17 @@ main {
 }
 
 .product-item {
-    border: 1px solid #ddd;
+    border: 1px solid #a2d1d4;
     padding: 1em;
     margin: 1em;
     width: 30%;
-    background-color: white;
+    background-color: rgb(135, 169, 197);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: #201d1d;
+    color: #ebdada;
     padding: 1em;
     text-align: center;
 }
