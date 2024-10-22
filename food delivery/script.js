@@ -1,58 +1,60 @@
 let cart = {};
-let totalPrice = 0;
-function addToCart(dishName, price) {
-    if (cart[dishName]) {
-        cart[dishName].quantity++;
-    } else {
-        cart[dishName] = { price, quantity: 1 };
-    }
-    updateCart();
-}
+        let totalPrice = 0;
 
-function updateCart() {
-    const cartItems = document.getElementById('cartItems');
-    cartItems.innerHTML = '';
-    totalPrice = 0;
+        function addToCart(dishName, price) {
+            console.log(`Adding ${dishName} for $${price}`);
+            if (cart[dishName]) {
+                cart[dishName].quantity++;
+            } else {
+                cart[dishName] = { price, quantity: 1 };
+            }
+            updateCart();
+        }
 
-    for (let dishName in cart) {
-        const item = cart[dishName];
-        const li = document.createElement('li');
-        li.textContent = `${dishName} - ${item.quantity} x $${item.price.toFixed(2)}`;
-        cartItems.appendChild(li);
-        totalPrice += item.price * item.quantity;
-    }
+        function updateCart() {
+            const cartItems = document.getElementById('cartItems');
+            cartItems.innerHTML = '';
+            totalPrice = 0;
 
-    document.getElementById('totalPrice').textContent = `$${totalPrice.toFixed(2)}`;
-}
+            for (let dishName in cart) {
+                const item = cart[dishName];
+                const li = document.createElement('li');
+                li.textContent = `${dishName} - ${item.quantity} x $${item.price.toFixed(2)}`;
+                cartItems.appendChild(li);
+                totalPrice += item.price * item.quantity;
+            }
 
-function checkout() {
-    if (Object.keys(cart).length > 0) {
-        document.getElementById('cart').style.display = 'none';
-        document.getElementById('orderConfirmation').style.display = 'block';
-    } else {
-        alert('Your cart is empty!');
-    }
-}
+            document.getElementById('totalPrice').textContent = `$${totalPrice.toFixed(2)}`;
+        }
 
-function confirmOrder() {
-    alert('Your order has been confirmed!');
-    cart = {};
-    updateCart();
-    document.getElementById('cart').style.display = 'block';
-    document.getElementById('orderConfirmation').style.display = 'none';
-}
+        function checkout() {
+            if (Object.keys(cart).length > 0) {
+                document.getElementById('cart').style.display = 'none';
+                document.getElementById('orderConfirmation').style.display = 'block';
+            } else {
+                alert('Your cart is empty!');
+            }
+        }
 
-// Set restaurant name dynamically
-function setRestaurantName() {
-    const params = new URLSearchParams(window.location.search);
-    const restaurantId = params.get('restaurant');
-    const restaurantNames = {
-        1: 'Restaurant 1',
-        2: 'Restaurant 2'
-    };
-    
-    document.getElementById('restaurantName').textContent = restaurantNames[restaurantId] || 'Restaurant Menu';
-}
+        function confirmOrder() {
+            alert('Your order has been confirmed!');
+            cart = {};
+            updateCart();
+            document.getElementById('cart').style.display = 'block';
+            document.getElementById('orderConfirmation').style.display = 'none';
+        }
 
-// Call this function when the restaurant page loads
-window.onload = setRestaurantName;
+        // Set restaurant name dynamically
+        function setRestaurantName() {
+            const params = new URLSearchParams(window.location.search);
+            const restaurantId = params.get('restaurant');
+            const restaurantNames = {
+                1: 'Restaurant 1',
+                2: 'Restaurant 2'
+            };
+            
+            document.getElementById('restaurantName').textContent = restaurantNames[restaurantId] || 'Restaurant Menu';
+        }
+
+        // Call this function when the restaurant page loads
+        window.onload = setRestaurantName;
