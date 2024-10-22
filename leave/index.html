@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leave Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Leave Management System</h2>
+
+    <!-- User Information Section -->
+    <div class="user-info">
+        <h3>Student Details</h3>
+        <label for="student-name">student Name:</label>
+        <input type="text" id="employee-name" class="name" placeholder="Enter your name" required>
+<label for="student-class">student class:</label>
+        <input type="text" id="student-class" class="class" placeholder="class & section" required>
+
+    </div>
+
+    <!-- Leave Form Section -->
+    <div class="leave-form">
+        <h3>Apply for Leave</h3>
+        <label for="leave-type">Select Leave Type:</label>
+        <select id="leave-type" class="leave-type">
+            <option value="casual">Casual Leave</option>
+            <option value="medical">Medical Leave</option>
+        </select>
+
+        <label for="leave-days">Number of Days:</label>
+        <input type="number" id="leave-days" class="leave-days" placeholder="Enter number of days" min="1" required>
+
+        <button onclick="applyLeave()">Apply Leave</button>
+    </div>
+
+    <!-- Leave Balance Section -->
+    <div class="balance">
+        <h3>Leave Balance</h3>
+        <p>Casual Leave Remaining: <span id="casual-leave" class="casual-leave">10</span> days</p>
+        <p>Medical Leave Remaining: <span id="medical-leave" class="medical-leave">15</span> days</p>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
