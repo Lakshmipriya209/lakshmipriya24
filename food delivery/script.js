@@ -1,3 +1,17 @@
+document.getElementById("login-button").addEventListener("click", function() {
+    const username = document.getElementById("username").value;
+    const password = document.getElementById("password").value;
+    const errorMessage = document.getElementById("error-message");
+
+    // Simple authentication check
+    if (username === "user" && password === "pass") {
+        errorMessage.textContent = '';
+        document.getElementById("login-form").style.display = 'none';
+        document.getElementById("menu").style.display = 'block';
+    } else {
+        errorMessage.textContent = 'Invalid username or password!';
+    }
+});
 let cart = {};
 let totalPrice = 0;
 
