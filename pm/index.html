@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Management Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">Project Management</div>
+    <div class="header-icons">
+        <input type="text" placeholder="Search" class="search-bar">
+        <img src="search-icon.png" alt="search-icon" class="icon">
+        <img src="profile.png" alt="profile" class="icon profile">
+    </div>
+</header>
+
+<div class="dashboard-container">
+    <nav class="sidebar">
+        <div class="menu-option active">Dashboard</div>
+        <div class="menu-option">Task Management</div>
+        <div class="menu-option">Settings</div>
+        <div class="menu-option logout">Logout</div>
+    </nav>
+
+    <main class="main-content">
+        <h1>Dashboard</h1>
+        <div class="task-summary">
+            <div class="summary-box">10<br>Pending Tasks</div>
+            <div class="summary-box">15<br>In Progress</div>
+            <div class="summary-box">20<br>Completed</div>
+        </div>
+
+        <div class="task-table">
+            <div class="table-header">
+                <div>Task</div>
+                <div>Assigned To</div>
+                <div>Due Date</div>
+                <div>Status</div>
+            </div>
+            <div class="task-list">
+                <div class="task-item">
+                    <div>Task 1</div>
+                    <div>Team Member</div>
+                    <div>2023-12-01</div>
+                    <div>
+                        <select>
+                            <option>Pending</option>
+                            <option selected>In Progress</option>
+                            <option>Completed</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="new-task">
+            <input type="text" placeholder="Task Name" id="newTaskName">
+            <button id="addTaskButton">Add Task</button>
+        </div>
+    </main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
