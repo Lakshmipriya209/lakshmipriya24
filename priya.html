@@ -1,63 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to My Page</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f0f0;
-        }
-        h1 {
-            color: #333;
-            margin-top: 20px;
-        }
-        h3 {
-            color: #555;
-            margin-bottom: 20px;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        li {
-            margin-bottom: 10px;
-        }
-        a {
-            text-decoration: none;
-            color: #007bff;
-            font-size: 18px;
-        }
-        a:hover {
-            color: #0056b3;
-        }
-        .links {
-            margin: 0 auto;
-            display: inline-block;
-            text-align: left;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FSWD Lab Experiments - M. Lakshmipriya</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #eef2f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      background-color: #ffffff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      max-width: 600px;
+      width: 90%;
+    }
+
+    h1 {
+      color: #1a202c;
+      margin-bottom: 10px;
+      font-size: 28px;
+    }
+
+    h3 {
+      color: #4a5568;
+      margin-bottom: 30px;
+      font-weight: normal;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      text-align: left;
+    }
+
+    li {
+      margin-bottom: 15px;
+    }
+
+    a {
+      text-decoration: none;
+      color: #007bff;
+      font-size: 18px;
+      transition: color 0.3s;
+    }
+
+    a:hover {
+      color: #0056b3;
+    }
+
+    .project-title::before {
+      content: '🔹 ';
+    }
+  </style>
 </head>
 <body>
+  <div class="container">
+    <h1>Welcome to My Web Page</h1>
+    <h3>M. Lakshmipriya | Reg. No: 108<br/>FSWD Lab Experiment List (IT3511)</h3>
 
-    <h1>WELCOME TO MY PAGE</h1>
-    <h3>M.Lakshmipriya,Reg.no:108, FSWD Lab Experiment List (IT3511)</h3>
-
-    <div class="links">
-        <ul>
-            <li><a href="https://lakshmipriya209.github.io/lakshmipriya24/PORTFOLIO.html">1.Portfolio</a></li>
-            <li><a href="https://lakshmipriya209.github.io/lakshmipriya24/todolist.html">2.To-Do List</a></li>
-            <li><a href="https://lakshmipriya209.github.io/lakshmipriya24/fswd/Micro.html">3.Microblogging</a></li>
-            <li><a href="https://lakshmipriya209.github.io/lakshmipriya24/food delivery/index.html">4.Food Delivery Website</a></li>
-            <li><a href="https://lakshmipriya209.github.io/lakshmipriya24/2210class/index.html">5.Buy & Sell Web Application</a></li>
-            <li><a href="https://lakshmipriya209.github.io/lakshmipriya24/leave/index.html">6.Leave Management System</a></li>
-            <li><a href="https://lakshmipriya209.github.io/lakshmipriya24/pm/index.html">7.project management</a></li>
-            <li><a href="https://lakshmipriya209.github.io/lakshmipriya24/805/index.html">8.online survey</a></li>
-        </ul>
-    </div>
+    <ul>
+      <li><a class="project-title" href="https://lakshmipriya209.github.io/lakshmipriya24/PORTFOLIO.html">Portfolio</a></li>
+      <li><a class="project-title" href="https://lakshmipriya209.github.io/lakshmipriya24/todolist.html">To-Do List</a></li>
+      <li><a class="project-title" href="https://lakshmipriya209.github.io/lakshmipriya24/fswd/Micro.html">Microblogging Platform</a></li>
+      <li><a class="project-title" href="https://lakshmipriya209.github.io/lakshmipriya24/food delivery/index.html">Food Delivery Website</a></li>
+      <li><a class="project-title" href="https://lakshmipriya209.github.io/lakshmipriya24/2210class/index.html">Buy & Sell Web Application</a></li>
+      <li><a class="project-title" href="https://lakshmipriya209.github.io/lakshmipriya24/leave/index.html">Leave Management System</a></li>
+      <li><a class="project-title" href="https://lakshmipriya209.github.io/lakshmipriya24/pm/index.html">Project Management Tool</a></li>
+      <li><a class="project-title" href="https://lakshmipriya209.github.io/lakshmipriya24/805/index.html">Online Survey Platform</a></li>
+    </ul>
+  </div>
 </body>
 </html>
